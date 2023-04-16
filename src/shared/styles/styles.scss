@@ -1,5 +1,7 @@
 @import "normalize";
+@import "typo";
 @import "colors";
+@import "grid";
 @import "buttons";
 
 body {
@@ -9,4 +11,8 @@ body {
   padding: 0 100px;
   color: var(--black-900);
   background-color: var(--white);
+
+  @media (max-width: 1220px) {
+    padding: 0 10px;
+  }
 }
