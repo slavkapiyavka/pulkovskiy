@@ -1,6 +1,12 @@
+@import "normalize";
 @import "colors";
+@import "buttons";
 
 body {
-  margin: 0;
   font-family: "Manrope", sans-serif;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 100px;
+  color: var(--black-900);
+  background-color: var(--white);
 }

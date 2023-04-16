@@ -1,0 +1,29 @@
+:host {
+  display: contents;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 58px;
+}
+
+.nav-list {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 18px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
