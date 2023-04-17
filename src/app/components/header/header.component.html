@@ -1,9 +1,17 @@
-<header class="main-header">
+<header [class.main-header_compact]="compactHeader" class="main-header">
   <nav class="main-nav">
     <ul class="nav-list">
-      <li><a class="nav-link" href="##">О проекте</a></li>
-      <li><a class="nav-link" href="##">Квартиры на 3D плане</a></li>
-      <li><a class="nav-link" href="##">Квартиры по параметрам</a></li>
+      <li *ngFor="let section of sections">
+        <a
+          (click)="fakeRoute($event)"
+          [attr.data-route]="section.anchor"
+          [class.active]="activeLink === section.anchor"
+          class="nav-link"
+          href="#{{ section.anchor }}"
+        >
+          {{ section.title }}
+        </a>
+      </li>
     </ul>
   </nav>
 
