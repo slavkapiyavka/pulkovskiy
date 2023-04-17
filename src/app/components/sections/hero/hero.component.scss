@@ -23,4 +23,13 @@
     margin: 0;
     grid-column-start: 3;
   }
+
+  &-image {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background: rgb(43, 47, 48);
+    background: linear-gradient(84deg, rgba(43, 47, 48, 1) 0%, rgba(228, 228, 236, 1) 80%, rgba(211, 212, 230, 1) 100%);
+    grid-column: 1 / -1;
+  }
 }
