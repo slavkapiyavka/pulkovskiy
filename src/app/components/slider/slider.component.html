@@ -1,0 +1,27 @@
+<div class="slides">
+  <img
+    *ngFor="let slide of slides; index as i"
+    [alt]="slide.altText"
+    [class.active]="i === currentSlide"
+    class="slide"
+    src="./assets/images/slider/{{ slide.name }}"
+  >
+</div>
+
+<footer class="slider-footer">
+  <div class="control-dots">
+    <button class="control-dot active"></button>
+    <button class="control-dot"></button>
+    <button class="control-dot"></button>
+    <button class="control-dot disabled"></button>
+  </div>
+
+  <div class="arrows">
+    <button (click)="onBackwardClick()" class="arrow backward">
+      <span class="visually-hidden">previous image</span>
+    </button>
+    <button (click)="onForwardClick()" class="arrow forward">
+      <span class="visually-hidden">next image</span>
+    </button>
+  </div>
+</footer>

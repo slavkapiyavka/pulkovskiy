@@ -1,0 +1,119 @@
+:host {
+  display: contents;
+}
+
+.slides {
+  display: flex;
+  overflow: auto;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+
+  .slide {
+    width: 100%;
+    height: auto;
+    scroll-snap-align: center;
+  }
+}
+
+.slider-footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 50px;
+}
+
+.control-dots {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 8px;
+}
+
+.control-dot {
+  position: relative;
+  width: var(--dot-size);
+  height: var(--dot-size);
+  padding: 0;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: var(--dot-size);
+  background-color: transparent;
+  --dot-size: 12px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    transition: border 125ms;
+    border: 1px solid var(--black-700);
+    border-radius: 6px;
+    background-color: transparent;
+    inset: 1px;
+  }
+
+  &:hover {
+    &::after {
+      border: 1px solid var(--black-600);
+    }
+  }
+
+  &.active {
+    border: 1px solid var(--black-800);
+
+    &::after {
+      background-color: var(--black-900);
+    }
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+
+    &::after {
+      border: 1px solid var(--black-200);
+    }
+  }
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 58px;
+}
+
+.arrow {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: background-color 125ms;
+  background-color: var(--black-900);
+  -webkit-mask: url("/assets/icons/arrow-forward.svg") no-repeat center / contain;
+  mask: url("/assets/icons/arrow-forward.svg") no-repeat center / contain;
+
+  &:hover {
+    background-color: var(--black-600);
+  }
+
+  &:active {
+    background-color: var(--black-900);
+  }
+
+  &.disabled {
+    background-color: var(--black-200);
+  }
+
+  &.backward {
+    transform: rotate(180deg);
+  }
+
+  &.forward {
+  }
+}
+
+

@@ -16,6 +16,7 @@
 
   &_compact {
     min-height: 68px;
+    border-bottom: 1px solid var(--black-50);
   }
 
   @media (max-width: 1220px) {
