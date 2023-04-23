@@ -3,6 +3,13 @@
 @import "colors";
 @import "grid";
 @import "buttons";
+@import "beatify";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Manrope", sans-serif;

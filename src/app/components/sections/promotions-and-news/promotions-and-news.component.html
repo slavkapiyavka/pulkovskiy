@@ -1,0 +1,17 @@
+<section class="promotions-and-news-section grid">
+  <h2 class="promotions-and-news-title title">Акции и новости</h2>
+
+  <app-tabs (onTabSelectEvent)="setActiveType($event)" [tabs]="tabs"></app-tabs>
+
+  <ng-container *ngFor="let article of articles.sort()">
+    <article *ngIf="activeType === 'all' || article.type === activeType" class="article fade-in-gradual">
+      <h3 class="article-title text-regular text-regular_bold">{{ article.title }}</h3>
+      <p class="article-text text-regular">{{ article.text }}</p>
+      <time
+        [dateTime]="article.date | date: 'yyyy-MM-dd'"
+        class="article-date">{{ article.date | date:'dd.MM.yyyy'}}
+      </time>
+      <a class="full-article-link" href="##">Читать больше</a>
+    </article>
+  </ng-container>
+</section>

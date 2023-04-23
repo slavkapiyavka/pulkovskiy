@@ -1,12 +1,12 @@
 <header [class.main-header_compact]="compactHeader" class="main-header">
   <nav class="main-nav">
-    <ul class="nav-list">
+    <ul class="nav-list clear-list">
       <li *ngFor="let section of sections">
         <a
           (click)="fakeRoute($event)"
           [attr.data-route]="section.anchor"
           [class.active]="activeLink === section.anchor"
-          class="nav-link"
+          class="nav-link underline-decoration"
           href="#{{ section.anchor }}"
         >
           {{ section.title }}

@@ -1,0 +1,11 @@
+<ul class="tabs-list clear-list">
+  <li *ngFor="let tab of tabs" class="tab">
+    <button
+      (click)="onTabSelect(tab.link)"
+      [class.active]="tab.link === activeTab"
+      class="tab-button underline-decoration"
+    >
+      {{ tab.name }}
+    </button>
+  </li>
+</ul>
