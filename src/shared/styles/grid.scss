@@ -1,6 +1,13 @@
 .grid {
   display: grid;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 100px;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 0 20px;
   grid-auto-flow: dense;
+
+  @media (max-width: 1220px) {
+    padding: 0 10px;
+  }
 }

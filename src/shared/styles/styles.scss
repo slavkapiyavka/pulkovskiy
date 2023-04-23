@@ -13,13 +13,9 @@
 
 body {
   font-family: "Manrope", sans-serif;
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   color: var(--black-900);
   background-color: var(--white);
-
-  @media (max-width: 1220px) {
-    padding: 0 10px;
-  }
 }

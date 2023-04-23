@@ -9,7 +9,6 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: clamp(320px, calc(100vw - 200px), 1920px - 200px);
   min-height: 142px;
   transition: min-height 125ms;
   background-color: var(--white);
@@ -17,10 +16,6 @@
   &_compact {
     z-index: 1;
     min-height: 68px;
-  }
-
-  @media (max-width: 1220px) {
-    max-width: clamp(320px, calc(100vw - 20px), 1920px - 200px);
   }
 }
 
