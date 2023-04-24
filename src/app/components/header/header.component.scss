@@ -3,19 +3,29 @@
 }
 
 .main-header {
-  position: fixed;
-  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  min-height: 142px;
-  transition: min-height 125ms;
-  background-color: var(--white);
+  height: 100%;
 
-  &_compact {
-    z-index: 1;
-    min-height: 68px;
+  &-wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 142px;
+    transition: height 125ms;
+    background-color: var(--white);
+
+    &.compact {
+      z-index: 1;
+      height: 68px;
+      border-bottom: 1px solid var(--black-50);
+    }
+  }
+
+  .button-link {
+    margin-right: 32px;
   }
 }
 

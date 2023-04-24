@@ -1,21 +1,24 @@
-<header [class.main-header_compact]="compactHeader" class="main-header grid">
-  <nav class="main-nav">
-    <ul class="nav-list clear-list">
-      <li *ngFor="let section of sections">
-        <a
-          (click)="fakeRoute($event)"
-          [attr.data-route]="section.anchor"
-          [class.active]="activeLink === section.anchor"
-          class="nav-link underline-decoration"
-          href="#{{ section.anchor }}"
-        >
-          {{ section.title }}
-        </a>
-      </li>
-    </ul>
-  </nav>
+<div [class.compact]="compactHeader" class="main-header-wrapper">
+  <header class="main-header grid">
+    <nav class="main-nav">
+      <ul class="nav-list clear-list">
+        <li *ngFor="let link of links">
+          <a
+            (click)="fakeRoute($event)"
+            [attr.data-route]="link.anchor"
+            [class.active]="activeLink === link.anchor"
+            class="nav-link underline-decoration"
+            href="#{{ link.anchor }}"
+          >
+            {{ link.title }}
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-  <a class="button-link" href="##">
-    Заказать звонок
-  </a>
-</header>
+    <a class="button-link" href="##">
+      Заказать звонок
+    </a>
+  </header>
+
+</div>

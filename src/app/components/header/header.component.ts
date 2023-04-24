@@ -6,7 +6,7 @@ import { Component, HostListener } from "@angular/core";
   styleUrls: ["./header.component.scss"],
 })
 export class HeaderComponent {
-  sections = [
+  links = [
     {
       title: "О проекте",
       anchor: "about_project",
@@ -31,6 +31,6 @@ export class HeaderComponent {
   private onWindowScroll() {
     const scrollTop = window.scrollY;
 
-    this.compactHeader = scrollTop > 100;
+    this.compactHeader = scrollTop > 68;
   }
 }
