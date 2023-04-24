@@ -1,0 +1,63 @@
+:host {
+  display: contents;
+}
+
+.main-footer {
+  padding: 50px 100px 75px;
+
+  @media (max-width: 1220px) {
+    padding: 42px 10px 68px;
+  }
+
+  &-wrapper {
+    width: 100%;
+    background-color: var(--black-950);
+  }
+}
+
+.project-info-wrap {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.copyright {
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
+  color: var(--black-50);
+}
+
+.main-footer-nav {
+  grid-column: 2 / 3;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  &__link {
+    font-family: "PT Mono", monospace;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 18px;
+    text-decoration: none;
+    color: var(--black-50);
+  }
+}
+
+.footer-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  grid-column: 3 / -1;
+
+  .link {
+    color: var(--black-50);
+  }
+}

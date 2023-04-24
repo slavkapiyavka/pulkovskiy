@@ -1,0 +1,52 @@
+<div class="main-footer-wrapper">
+  <footer class="main-footer grid">
+    <div class="project-info-wrap">
+      <img alt="Логотип зайстрощика 'Пулковский'" height="33" src="./assets/images/logo.svg" width="213">
+      <span class="copyright">© 2021 АО СЗ «Пулковский»</span>
+    </div>
+
+    <nav class="main-footer-nav">
+      <ul class="footer-nav-list clear-list">
+        <li *ngFor="let link of links">
+          <a
+            class="footer-nav-list__link underline-decoration"
+            href="#{{ link.anchor }}"
+            rel="bookmark"
+          >
+            {{ link.title }}
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="footer-links-list clear-list">
+      <li>
+        <a
+          class="link button-link"
+          href="https://vk.com/pulkovskiyirkutsk"
+          target="_blank"
+        >
+          Вконтакте
+        </a>
+      </li>
+      <li>
+        <a
+          class="link button-link"
+          href="https://www.youtube.com/@pulkovsky/videos"
+          target="_blank"
+        >
+          YouTube
+        </a>
+      </li>
+      <li>
+        <a
+          class="link button-link"
+          href=""
+          target="_blank"
+        >
+          Правила обработки персональных данных
+        </a>
+      </li>
+    </ul>
+  </footer>
+</div>

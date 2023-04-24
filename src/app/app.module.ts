@@ -7,9 +7,10 @@ import { HeroComponent } from "./components/sections/hero/hero.component";
 import { AboutComponent } from "./components/sections/about/about.component";
 import { PromotionsAndNewsComponent } from './components/sections/promotions-and-news/promotions-and-news.component';
 import { TabsComponent } from './components/tabs/tabs.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HeroComponent, AboutComponent, PromotionsAndNewsComponent, TabsComponent],
+  declarations: [AppComponent, HeaderComponent, HeroComponent, AboutComponent, PromotionsAndNewsComponent, TabsComponent, FooterComponent],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],
