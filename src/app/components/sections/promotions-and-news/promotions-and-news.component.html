@@ -1,4 +1,4 @@
-<section class="promotions-and-news-section grid">
+<section class="promotions-and-news-section grid" id="promotions_and_news">
   <h2 class="promotions-and-news-title title">Акции и новости</h2>
 
   <app-tabs (onTabSelectEvent)="setActiveType($event)" [tabs]="tabs"></app-tabs>
@@ -11,7 +11,7 @@
         [dateTime]="article.date | date: 'yyyy-MM-dd'"
         class="article-date">{{ article.date | date:'dd.MM.yyyy'}}
       </time>
-      <a class="full-article-link" href="##">Читать больше</a>
+      <a class="full-article-link button-link" href="##">Читать больше</a>
     </article>
   </ng-container>
 </section>
