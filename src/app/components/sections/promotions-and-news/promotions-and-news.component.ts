@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from "@angular/core";
+import { ChangeDetectorRef, Component } from "@angular/core";
 import { Tab } from "../../../../shared/interfaces/tab";
 import { Article } from "../../../../shared/interfaces/article";
 
@@ -6,7 +6,6 @@ import { Article } from "../../../../shared/interfaces/article";
   selector: "app-promotions-and-news",
   templateUrl: "./promotions-and-news.component.html",
   styleUrls: ["./promotions-and-news.component.scss"],
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PromotionsAndNewsComponent {
   tabs: Tab[] = [
@@ -57,7 +56,11 @@ export class PromotionsAndNewsComponent {
 
   activeType = "all";
 
+  constructor(private cdr: ChangeDetectorRef) {}
+
   public setActiveType(type: string): void {
+    this.activeType = "";
+    this.cdr.detectChanges();
     this.activeType = type;
   }
 }

@@ -1,0 +1,20 @@
+.fade-in-gradual {
+  animation: var(--medium-transition) ease 0s fadeInGradual both;
+}
+
+@keyframes fadeInGradual {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@for $i from 1 through 75 {
+  .fade-in-gradual:nth-child(#{$i}) {
+    animation-delay: $i * calc(1s / 15);
+  }
+}
