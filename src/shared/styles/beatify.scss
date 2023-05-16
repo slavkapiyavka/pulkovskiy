@@ -6,8 +6,7 @@
     width: 100%;
     height: 1px;
     content: "";
-    transition: inset 125ms, opacity 175ms;
-    transition-delay: 150ms;
+    transition: inset var(--medium-transition), opacity var(--medium-transition), height var(--medium-transition);
     opacity: 0;
     background-color: currentColor;
     inset: 105% 0 0 0;
@@ -24,8 +23,9 @@
   &.active {
 
     &::before {
+      height: 2px;
       opacity: 1;
-      inset: 50% 0 0 0;
+      inset: 48% 0 0 0;
     }
   }
 }

@@ -14,7 +14,7 @@
     top: 0;
     width: 100%;
     height: 142px;
-    transition: height 125ms;
+    transition: height var(--medium-transition);
     background-color: var(--white);
 
     &.compact {
@@ -42,7 +42,7 @@
 
 .nav-link {
   position: relative;
-  transition: color 125ms;
+  transition: color var(--medium-transition);
   transition-delay: 150ms;
   text-decoration: none;
   color: inherit;

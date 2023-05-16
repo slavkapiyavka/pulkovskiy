@@ -20,7 +20,7 @@
     font-style: normal;
     line-height: 40px;
     cursor: pointer;
-    transition: color 125ms;
+    transition: color var(--medium-transition);
     text-decoration: none;
     color: var(--black-200);
     border: none;
