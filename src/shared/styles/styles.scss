@@ -1,9 +1,10 @@
-@import "normalize";
-@import "typo";
-@import "colors";
-@import "grid";
-@import "buttons";
-@import "beatify";
+@use "normalize";
+@use "typo";
+@use "colors";
+@use "grid";
+@use "buttons";
+@use "beatify";
+@use "scrollbar";
 
 *,
 *::after,
