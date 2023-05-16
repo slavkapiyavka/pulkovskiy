@@ -12,8 +12,8 @@ export class HeaderComponent {
       anchor: "about_project",
     },
     {
-      title: "Квартиры на 3D плане",
-      anchor: "apartments_plan",
+      title: "Акции и новости",
+      anchor: "promotions_and_news",
     },
     {
       title: "Квартиры по параметрам",
