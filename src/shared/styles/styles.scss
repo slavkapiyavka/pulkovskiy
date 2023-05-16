@@ -23,3 +23,11 @@ body {
   color: var(--black-900);
   background-color: var(--white);
 }
+
+img,
+svg,
+video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
