@@ -1,3 +1,6 @@
-<section class="location-section" id="location">
-  <h2 class="title">Расположение</h2>
+<section class="location-section grid" id="location">
+  <h2 class="location-section-title title">Расположение</h2>
+  <address class="location-section-address">Иркутск, Пулковский переулок</address>
+  <app-tabs (onTabSelectEvent)="setActiveLocationType($event)" [tabs]="tabs"></app-tabs>
+  <div #yamaps class="map" id="map"></div>
 </section>
