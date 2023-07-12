@@ -10,6 +10,7 @@ import { TabsComponent } from "./components/tabs/tabs.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { LocationComponent } from "./components/sections/location/location.component";
 import { NgOptimizedImage } from "@angular/common";
+import { AngularYandexMapsModule } from "angular8-yandex-maps";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { NgOptimizedImage } from "@angular/common";
     FooterComponent,
     LocationComponent,
   ],
-  imports: [BrowserModule, NgOptimizedImage],
+  imports: [BrowserModule, NgOptimizedImage, AngularYandexMapsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -2,5 +2,16 @@
   <h2 class="location-section-title title">Расположение</h2>
   <address class="location-section-address">Иркутск, Пулковский переулок</address>
   <app-tabs (onTabSelectEvent)="setActiveLocationType($event)" [tabs]="tabs"></app-tabs>
-  <div class="map" id="map"></div>
+  <div class="map" id="map">
+    <ya-map [center]="centerPlaceMark" [zoom]="14">
+      <ya-clusterer [options]="clustererOptions">
+        <ya-placemark
+          *ngFor="let placemark of placemarks"
+          [geometry]="placemark.geometry"
+          [options]="placemark.options"
+          [properties]="placemark.properties"
+        ></ya-placemark>
+      </ya-clusterer>
+    </ya-map>
+  </div>
 </section>
