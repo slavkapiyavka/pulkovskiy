@@ -23,31 +23,31 @@ export class LocationComponent implements OnInit {
     },
     {
       name: "Рестораны",
-      link: "all",
+      link: "restaurants",
     },
     {
       name: "Музеи",
-      link: "all",
+      link: "museums",
     },
     {
       name: "Магазины",
-      link: "all",
+      link: "shops",
     },
     {
       name: "Больницы",
-      link: "all",
+      link: "hospitals",
     },
     {
       name: "Спорт",
-      link: "all",
+      link: "sports",
     },
     {
       name: "Театр",
-      link: "all",
+      link: "theaters",
     },
     {
       name: "Ж/Д вокзал",
-      link: "all",
+      link: "railway-stations",
     },
   ];
 
